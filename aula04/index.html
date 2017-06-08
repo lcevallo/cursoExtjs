@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<!-- Importing the stylesheet (theme neptune) -->
+<link rel="stylesheet" type="text/css" href="../ext-5.1.1/build/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all.css">
+<!-- Importing the Extjs library -->
+<script src="../ext-5.1.1/build/ext-all.js"></script>
+<!-- Importing overrides Js code special for theme neptune -->
+<script src="../ext-5.1.1/build/packages/ext-theme-neptune/build/ext-theme-neptune.js"></script>
+
+<script type="text/javascript" src="../jquery/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div id="panelCt"></div>
+</body>
+
+<script type="text/javascript">
+	//Ext.onReady(function()
+	$(document).ready(function()	
+							{
+								Ext.create('widget.panel',{
+															renderTo:'panelCt',
+															title:'ExtJS 5 Panel',
+															width:400,
+															height: 300,
+															frame:true,
+															html: "<div id='contentID'>HOLA</div>"
+															}
+											);
+								$('#contentID').load('content.html');
+							}
+
+				);
+	
+</script>
+</html>
